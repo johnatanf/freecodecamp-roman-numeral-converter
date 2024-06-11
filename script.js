@@ -3,7 +3,7 @@ initialisePage()
 function isValidNumber(num) {
     const divOutput = document.getElementById('output')
 
-    if(isNaN(num)) {
+    if(isNaN(num) || num === "") {
         divOutput.innerHTML = "Please enter a valid number"
         return false;
     } else if(num < 1) {
