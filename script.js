@@ -1,4 +1,6 @@
-function validateNumber(num) {
+initialisePage()
+
+function isValidNumber(num) {
     const divOutput = document.getElementById('output')
 
     if(isNaN(num)) {
@@ -56,4 +58,21 @@ function convertNumberToRomanNumeral(num) {
     }
 
     return romanNumeralString
+}
+
+function clickConvertButton() {
+    const numberField = document.getElementById('number')
+    const divOutput = document.getElementById('output')
+    const inputNum = numberField.value
+    let romanResult
+
+    if(isValidNumber(inputNum)) {
+        romanResult = convertNumberToRomanNumeral(inputNum)
+        divOutput.innerHTML = romanResult
+    }
+}
+
+function initialisePage() {
+    const convertBtn = document.getElementById('convert-btn')
+    convertBtn.addEventListener('click', clickConvertButton)
 }
