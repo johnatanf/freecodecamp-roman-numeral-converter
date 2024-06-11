@@ -13,3 +13,20 @@ const romanNumerals = [
     {"IV": 4},
     {"I": 1}
 ]
+
+function validateNumber(num) {
+    const divOutput = document.getElementById('output')
+
+    if(isNaN(num)) {
+        divOutput.innerHTML = "Please enter a valid number"
+        return false;
+    } else if(num < 1) {
+        divOutput.innerHTML = "Please enter a number greater than or equal to 1"
+        return false;
+    } else if(num >= 4000) {
+        divOutput.innerHTML = "Please enter a number less than or equal to 3999"
+        return false;
+    } else {
+        return true;
+    }
+}
