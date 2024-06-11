@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background: #365E32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.app-heading {
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#app-container {
+    background: #81A263;
+    padding: 10px 20px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.input-btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#number {
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    padding: 5px 10px;
+}
+
+#convert-btn {
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    background-color: #E7D37F;
+    padding: 5px 10px;
+}
+
+#convert-btn:hover {
+    background-color: #FD9B63;
+    color: #FFFFFF;
+}
+
+#output {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+}
+
+@media screen and (min-width: 500px) {
+    html {
+        font-size: 12px;
+    }
+
+    #app-container {
+        width: 60vw;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+
+    #app-container {
+        width: 50vw;
+        max-width: 600px;
+        padding: 25px 50px;
+    }
+}
